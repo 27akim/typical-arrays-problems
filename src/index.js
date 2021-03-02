@@ -1,13 +1,13 @@
-exports.min = function min(array)
+/*exports.min = */function min(array)
 {
     let temp = 0;
-    if(array[0] != undefined)
+    if(array == undefined || array.length == 0)
     {
-        temp = array[0];
+        return temp;
     }
     else
     {
-        return temp;
+        temp = array[0];
     }
     for (let i=0; i<array.length - 1; i++)
     {
@@ -19,16 +19,16 @@ exports.min = function min(array)
     return temp;
 }
 
-exports.max = function max(array)
+/*exports.max = */function max(array)
 {
     let temp = 0;
-    if(array[0] != undefined)
+    if(array == undefined || array.length == 0)
     {
-        temp = array[0];
+        return temp;
     }
     else
     {
-        return temp;
+        temp = array[0];
     }
     for (let i=0; i<array.length - 1; i++)
     {
@@ -40,10 +40,10 @@ exports.max = function max(array)
     return temp;
 }
 
-exports.avg = function avg(array)
+/*exports.avg = */function avg(array)
 {
     let sum = 0;
-    if(array.length == 0)
+    if(array == undefined || array.length == 0)
     {
         return sum;
     }
@@ -53,3 +53,5 @@ exports.avg = function avg(array)
     }
     return sum/array.length;
 }
+
+console.log(max([]));
