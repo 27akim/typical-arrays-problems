@@ -1,4 +1,4 @@
-/*exports.min = */function min(array)
+exports.min = function min(array)
 {
     let temp = 0;
     if(array == undefined || array.length == 0)
@@ -19,7 +19,7 @@
     return temp;
 }
 
-/*exports.max = */function max(array)
+exports.max = function max(array)
 {
     let temp = 0;
     if(array == undefined || array.length == 0)
@@ -40,7 +40,7 @@
     return temp;
 }
 
-/*exports.avg = */function avg(array)
+exports.avg = function avg(array)
 {
     let sum = 0;
     if(array == undefined || array.length == 0)
@@ -53,5 +53,3 @@
     }
     return sum/array.length;
 }
-
-console.log(max([]));
