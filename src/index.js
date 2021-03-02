@@ -9,11 +9,11 @@ exports.min = function min(array)
     {
         temp = array[0];
     }
-    for (let i=0; i<array.length - 1; i++)
+    for (let i=1; i<array.length; i++)
     {
-        if(array[i] > array[i + 1])
+        if(temp > array[i])
         {
-            temp = array[i + 1];
+            temp = array[i];
         }
     }
     return temp;
@@ -30,11 +30,11 @@ exports.max = function max(array)
     {
         temp = array[0];
     }
-    for (let i=0; i<array.length - 1; i++)
+    for (let i=1; i<array.length; i++)
     {
-        if(array[i] < array[i + 1])
+        if(temp < array[i])
         {
-            temp = array[i + 1];
+            temp = array[i];
         }
     }
     return temp;
